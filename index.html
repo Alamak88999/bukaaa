@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Catch Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="score">Skor: 0</div>
+        <div id="countdown"></div>
+        <div id="emoji-container"></div>
+        <div id="catcher"></div>
+    </div>
+
+    <!-- Pop-up Awal -->
+    <div id="startPopup" class="popup">
+        <div class="envelope">
+            <div class="letter.">
+                <p>Apakah kamu siap?</p>
+                <button id="startButton" class="button">Mulai Game</button>
+                <button id="rulesButton" class="button">Aturan Game</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up Aturan -->
+    <div id="rulesPopup" class="popup">
+        <div class="envelope">
+            <div class="letter">
+                <span id="closeRules" class="close-button">&times;</span>
+                <p>Tangkap 15 emoji dan game akan menang!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up Pertama -->
+    <div id="popup1" class="popup">
+        <div class="envelope">
+            <div class="letter">
+                <p>Kamu tau gak?</p>
+                <button id="noButton" class="button">Tidak</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up Kedua -->
+    <div id="popup2" class="popup">
+        <div class="envelope">
+            <div class="letter">
+                <p>sebelumnya afdal ucapkan selamat sudah menangkap 15 emoji<br />daannnnn<br />Terimakasih ya araaaa sudah mau nemenin Afdall sampai saat ini, walaupun Afdall banyak kekurangan.<br />afdal bingung mau ngomong gimana hehhe</p>
+                <button id="restartButton" class="button">Kembali ke Awal</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tampilan Akhir -->
+    <div id="endScreen" class="end-screen">
+        <p>Website telah hilang</p>
+        <button id="returnButton" class="button">Tekan untuk Kembali</button>
+        <div id="loadingContainer">
+            <p id="loadingText">Tunggu ya araaaa</p>
+            <div id="loadingBar"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
